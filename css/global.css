@@ -61,7 +61,7 @@
     top: 0;
     left: 0;
 
-	display: flex;
+	display: none;
     flex-direction: column;
 
     width: 100%;
@@ -262,6 +262,10 @@ header .search input::placeholder {
 
 	.header__nav {
 		display: none;
+	}
+
+	.mobile-menu {
+		display: flex;
 	}
 
 	.mobile-menu-bar-label {
