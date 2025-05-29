@@ -128,7 +128,7 @@
 
 .mobile-menu .header__nav-end {
 	position: absolute;
-	bottom: 12.5px;
+	bottom: 0;
 
 	display: flex;
 	flex-direction: column;
@@ -137,6 +137,10 @@
 	width: 100%;
 
 	padding: 12.5px;
+}
+
+.mobile-menu .sign-in {
+	padding: 15px 0 !important;
 }
 
 /* header */

@@ -19,7 +19,7 @@ section {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 
     width: 100%;
     height: calc(100vh - 88.5px);
@@ -47,6 +47,7 @@ section::before {
 .section-center {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 25px;
 
     color: #fff;
@@ -57,15 +58,14 @@ section::before {
     font-size: 128px;
 }
 
-.section-bottom {
-    display: flex;
-    justify-content: end;
-}
+.section-center a {
+    width: fit-content;
 
-.section-bottom a {
+    margin-top: 25px;
     padding: 10px 15px;
     background: #fff;
     font-size: 18px;
+    color: #000;
 
     &:hover {
         background: rgba(255, 255, 255, 0.75);
