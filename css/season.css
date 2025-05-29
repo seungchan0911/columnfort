@@ -78,7 +78,7 @@ section::before {
 	}
 
     section {
-        padding: 25px;
+        padding: 12.5px;
     }
 
     .season-title {
@@ -88,11 +88,11 @@ section::before {
 
 @media (max-width: 750px) {
     main {
-        margin-top: 75px;
+        margin-top: 50px;
     }
 
     section {
-        height: calc(100vh - 75px);
+        height: calc(100vh - 50px);
     }
 
     .season-title {

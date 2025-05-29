@@ -62,17 +62,20 @@ main {
 }
 
 @media (max-width: 750px) {
+    main {
+        gap: 25px;
+
+        margin-top: 50px;
+    }
+    
     .items-frame {
         grid-template-columns: 1fr 1fr;
 
-        margin-top: 75px;
     }
 }
 
 @media (max-width: 350px) {
     .items-frame {
         grid-template-columns: 1fr;
-
-        margin-top: 75px;
     }
 }
