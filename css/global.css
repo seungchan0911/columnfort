@@ -257,6 +257,10 @@ header .search input::placeholder {
 	.container {
 		height: calc(100svh - 50px);
 	}
+	
+	.mobile-menu {
+		height: calc(100svh - 50px);
+	}
 
 	header {
 		padding: 12.5px;
