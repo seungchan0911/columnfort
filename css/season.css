@@ -1,0 +1,101 @@
+header {
+    position: fixed;
+    top: 0;
+
+    background: #fff;
+    z-index: 100;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 88.5px;
+}
+
+section {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: calc(100vh - 88.5px);
+
+    padding: 50px 250px;
+}
+
+section::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.125);
+
+    z-index: -100;
+}
+
+.section-center {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    color: #fff;
+}
+
+.season-title {
+    font-family: 'Helvetica Bold Oblique';
+    font-size: 128px;
+}
+
+.section-bottom {
+    display: flex;
+    justify-content: end;
+}
+
+.section-bottom a {
+    padding: 10px 15px;
+    background: #fff;
+    font-size: 18px;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.75);
+    }
+}
+
+@media (max-width: 1200px) {
+	main {        
+		padding: 0 !important;
+	}
+
+    section {
+        padding: 25px;
+    }
+
+    .season-title {
+        font-size: 96px;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        margin-top: 75px;
+    }
+
+    section {
+        height: calc(100vh - 75px);
+    }
+
+    .season-title {
+        font-size: 64px;
+    }
+}

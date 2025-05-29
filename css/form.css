@@ -1,0 +1,119 @@
+/* form */
+
+.container {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+
+    padding: 25px 250px;
+    background: rgba(0, 0, 0, 0.025);
+}
+
+.form-frame {
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 5px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.form {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 50%;
+
+    padding: 50px;
+    background: #fff;
+    transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.form-start {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-group input {
+    all: unset;
+
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.input-group input::placeholder {
+    color: rgba(0, 0, 0, 0.125);
+}
+
+.form-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.form-end button {
+    all: unset;
+
+    cursor: pointer;
+}
+
+.form-end label {
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-img {
+    width: 50%;
+    height: 100%;
+
+    background-image: url(https://images.unsplash.com/photo-1730629194784-eeab61a5b949?q=80&w=2953&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    z-index: 100;
+}
+
+@media (max-width: 750px) {
+    .form-frame {
+        /* border: 1px solid rgba(0, 0, 0, 0.125); */
+    }
+
+    .form {
+        width: 100%;
+
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .form-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        filter: brightness(150%);
+        opacity: 0.125;
+        pointer-events: none;
+    }
+}

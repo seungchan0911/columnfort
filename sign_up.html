@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOUMNFORT</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/form_change_effect.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><div class="header__logo logo"><img src="./img/logo.svg" alt=""></div></a>
+            <div class="header__nav">
+                <ul class="header__nav-start">
+                    <li><a href="./season.html">home</a></li>
+                    <li><a href="./all.html">all</a></li>
+                    <li><a href="#">category</a></li>
+                    <input type="checkbox" id="search" hidden>
+                    <li class="search"><input type="text" placeholder="Search"><label for="search"><img src="./img/Search.svg" alt=""></label></li>
+                </ul>
+                <ul class="header__nav-end">
+                    <li><a class="sign-in" href="./sign_in.html">Sign in</a></li>
+                    <li><a class="sign-up" href="./sign_up.html">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-bar">
+                <img src="./img/menu_bar.svg" alt="">
+            </div>
+        </header>
+        <main>
+            <input type="checkbox" id="change" checked hidden>
+            <div class="form-frame">
+                <div class="form-img"></div>
+                <div class="form">
+                    <div class="form-start">
+                        <h1>Create Account</h1>
+                        <div class="input-group">
+                            <input type="text" name="username" placeholder="username" autocomplete="off">
+                            <input type="text" name="id" placeholder="id" autocomplete="off">
+                            <input type="password" name="password" placeholder="password" autocomplete="off">
+                            <input type="text" name="phone_number" placeholder="phone_number" autocomplete="off">
+                            <input type="text" name="email" placeholder="email" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-end">
+                        <button>Sign up</button>
+                        <label for="change">Are you ready for Sign in?</label>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+<script src="./js/sign_up.js"></script>
+</html>
