@@ -254,12 +254,8 @@ header .search input::placeholder {
 }
 
 @media (max-width: 750px) {
-	.container {
-		height: calc(100svh - 50px);
-	}
-	
 	.mobile-menu {
-		height: calc(100svh - 50px);
+		height: 100dvh;;
 	}
 
 	header {
