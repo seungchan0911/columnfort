@@ -28,7 +28,6 @@ function animate() {
     requestAnimationFrame(animate)
 }
 
-window.addEventListener("resize", () => {
-    if (window.innerWidth > 450)
-        animate()
-})
+if (window.innerWidth > 450) {
+    animate()
+}
