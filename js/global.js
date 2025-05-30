@@ -1,6 +1,11 @@
 function search() {
     const searchBtn = document.querySelector(".search-btn")
     const searchInput = document.querySelector(".search input")
+    const searchToggle = document.querySelector(".search-toggle")
+
+    searchToggle.onclick = () => {
+        searchInput.focus()
+    }
 
     searchBtn.onclick = () => {
             if (searchInput.value.trim())
