@@ -22,7 +22,7 @@ section {
     justify-content: center;
 
     width: 100%;
-    height: calc(100vh - 88.5px);
+    height: calc(100dvh - 88.5px);
 
     padding: 50px 250px;
 }
@@ -92,7 +92,7 @@ section::before {
     }
 
     section {
-        height: calc(100vh - 50px);
+        height: calc(100dvh - 50px);
     }
 
     .season-title {
