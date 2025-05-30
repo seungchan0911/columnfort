@@ -16,6 +16,9 @@ main {
 }
 
 .collection-title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-family: 'Helvetica Bold Oblique';
     font-size: 64px;
 }
