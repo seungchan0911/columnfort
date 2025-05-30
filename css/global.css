@@ -221,6 +221,30 @@ header .search {
 	border-bottom: 1px solid;
 }
 
+.search .close-toggle {
+	display: none;
+
+	margin-bottom: 2.5px;
+}
+
+.search .search-btn {
+	display: none;
+
+	cursor: pointer;
+}
+
+#search:checked ~ .search .close-toggle {
+	display: block;
+}
+
+#search:checked ~ .search .search-toggle {
+	display: none;
+}
+
+#search:checked ~ .search .search-btn {
+	display: block;
+}
+
 #search:checked ~ .search input {
 	width: 100%;
 }
