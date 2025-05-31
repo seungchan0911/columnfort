@@ -155,12 +155,12 @@ main {
 }
 
 @media (max-width: 750px) {	
+    header {
+        position: static !important;
+    }
+
     .container {
         height: 100dvh;
-    }
-    
-    header {
-        position: static;
     }
     
     main {
@@ -189,6 +189,10 @@ main {
 
     .item-main-info-center .size {
         display: flex;
+    }
+
+    .item-info-top {
+        gap: 12.5px;
     }
 
     .item-info-top > .size {
