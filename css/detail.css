@@ -139,6 +139,15 @@ main {
     cursor: pointer;
 }
 
+.item-main-info-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-main-info-center .size {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .item-info-center {
         width: calc((100vw - 50px - 12.5px) / 2);
@@ -149,26 +158,26 @@ main {
     .container {
         height: 100dvh;
     }
-
+    
     header {
         position: static;
     }
-
+    
     main {
         align-items: start;
     }
-
+    
     .item {
         flex-direction: column;
         gap: 12.5px;
-
+        
         height: 100%;
     }
-
+    
     .item-imgs li {
         width: 100px;
     }
-
+    
     .item-info {
         height: 100%;
         gap: 12.5px;
@@ -176,5 +185,13 @@ main {
     
     .item-info-center {
         width: calc(100vw - 25px);
+    }
+
+    .item-main-info-center .size {
+        display: flex;
+    }
+
+    .item-info-top > .size {
+        display: none;
     }
 }
