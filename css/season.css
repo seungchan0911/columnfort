@@ -78,7 +78,7 @@ section::before {
 	}
 
     section {
-        padding: 12.5px;
+        padding: 25px;
     }
 
     .season-title {
@@ -92,7 +92,9 @@ section::before {
     }
 
     section {
-        height: calc(100dvh - 50px);
+        height: calc(100vh - 50px);
+
+        padding: 12.5px;
     }
 
     .season-title {
