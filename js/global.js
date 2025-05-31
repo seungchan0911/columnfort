@@ -9,12 +9,12 @@ function Search() {
 
     searchBtn.onclick = () => {
             if (searchInput.value.trim())
-                window.location.href = `../collection.html?id=${searchInput.value}`
+                window.location.href = `../collection.html?search=${searchInput.value}`
         }
         
         searchInput.addEventListener("keydown", (e) => {
             if (e.key === "Enter" && searchInput.value.trim()) {
-                window.location.href = `../collection.html?id=${searchInput.value}`
+                window.location.href = `../collection.html?search=${searchInput.value}`
             }
         })
 }
@@ -27,12 +27,12 @@ function mobileSearch() {
 
     searchBtn.onclick = () => {
             if (searchInput.value.trim())
-                window.location.href = `../collection.html?id=${searchInput.value}`
+                window.location.href = `../collection.html?search=${searchInput.value}`
         }
         
         searchInput.addEventListener("keydown", (e) => {
             if (e.key === "Enter" && searchInput.value.trim()) {
-                window.location.href = `../collection.html?id=${searchInput.value}`
+                window.location.href = `../collection.html?search=${searchInput.value}`
             }
         })
 }

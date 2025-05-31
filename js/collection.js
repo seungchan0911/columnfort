@@ -3,10 +3,24 @@ function getIdByParams() {
     const idValue = params.get("id")
     return idValue
 }
+function getSearchByParams() {
+    const params = new URLSearchParams(window.location.search)
+    const searchValue = params.get("search")
+    return searchValue
+}
 
 function pushParamsToTitle() {
     const collectionTitle = document.querySelector(".collection-title")
-    collectionTitle.textContent = getIdByParams()
+    const idParam = getIdByParams()
+    const searchParam = getSearchByParams()
+
+    if (searchParam) {
+        collectionTitle.textContent = `Search: ${searchParam}`
+    } else if (idParam) {
+        collectionTitle.textContent = idParam
+    } else {
+        collectionTitle.textContent = "No results"
+    }
 }
 
 pushParamsToTitle()
@@ -17,29 +31,29 @@ function getCollection() {
         .then(data => {
             const itemsFrame = document.querySelector(".items-frame")
             const categoryId = getIdByParams()
-            const lowerKeyword = categoryId?.toLowerCase()
+            const searchKeyword = getSearchByParams()?.toLowerCase()
 
             let itemsToShow = []
 
-            if (categoryId === "all") {
-                for (const category in data) {
-                    itemsToShow = itemsToShow.concat(data[category])
-                }
-            } else if (data[categoryId]) {
-                itemsToShow = data[categoryId]
-            } else {
+            if (searchKeyword) {
                 for (const category in data) {
                     const matchedItems = data[category].filter(item =>
-                        item.title.toLowerCase().includes(lowerKeyword)
+                        item.title.toLowerCase().includes(searchKeyword)
                     )
                     itemsToShow = itemsToShow.concat(matchedItems)
                 }
+            } else if (categoryId === "all") {
+                for (const category in data) {
+                    itemsToShow = itemsToShow.concat(data[category])
+                }
+            } else if (categoryId && data[categoryId]) {
+                itemsToShow = data[categoryId]
             }
 
             itemsFrame.innerHTML = ""
 
             if (itemsToShow.length === 0) {
-                itemsFrame.innerHTML = `<p>No results found for "${categoryId}"</p>`
+                itemsFrame.innerHTML = `<p>No results found.</p>`
             } else {
                 itemsToShow.forEach(item => {
                     const itemDiv = document.createElement("div")
