@@ -1,5 +1,7 @@
 header {
     position: fixed;
+
+    background: #fff;
 }
 
 main {
@@ -155,32 +157,28 @@ main {
 }
 
 @media (max-width: 750px) {	
-    header {
-        position: static !important;
-    }
-
-    .container {
-        height: 100dvh;
-    }
-    
     main {
         align-items: start;
+
+        margin: 50px 0;
     }
     
     .item {
         flex-direction: column;
         gap: 12.5px;
         
-        height: 100%;
+        /* height: 100%; */
     }
     
     .item-imgs li {
-        width: 100px;
+        width: 150px;
     }
     
     .item-info {
-        height: 100%;
+        justify-content: start;
         gap: 12.5px;
+        
+        height: fit-content;
     }
     
     .item-info-center {
@@ -197,5 +195,15 @@ main {
 
     .item-info-top > .size {
         display: none;
+    }
+
+    .item-info-bottom {
+        position: fixed;
+        bottom: 0;
+
+        width: calc(100% - 12.5px);
+
+        padding: 12.5px 0;
+        background: #fff;
     }
 }
