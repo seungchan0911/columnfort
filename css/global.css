@@ -314,9 +314,9 @@ header {
 	}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 750px) {	
 	.mobile-menu {
-		height: 100dvh;;
+		height: 100dvh;
 	}
 
 	header {
