@@ -56,19 +56,18 @@ function getCollection() {
                 itemsFrame.innerHTML = `<p>No results found.</p>`
             } else {
                 itemsToShow.forEach(item => {
-                    const itemDiv = document.createElement("div")
-                    itemDiv.className = "item"
+                    const itemObj = document.createElement("a")
+                    itemObj.className = `item ${item.id}`
+                    itemObj.href = `../detail.html?id=${item.id}`
 
-                    itemDiv.innerHTML = `
+                    itemObj.innerHTML = `
                         <img src="${item.image || './img/placeholder.png'}" alt="${item.title}">
-                        <a href="./detail.html?id=${item.id}">
-                            <div class="item-info">
-                                <div class="item-title">${item.title}</div>
-                                <div class="item-price">${item.price.toLocaleString()}￦</div>
-                            </div>
-                        </a>
+                        <div class="item-info">
+                            <div class="item-title">${item.title}</div>
+                            <div class="item-price">${item.price.toLocaleString()}￦</div>
+                        </div>
                     `
-                    itemsFrame.appendChild(itemDiv)
+                    itemsFrame.appendChild(itemObj)
                 })
             }
         })

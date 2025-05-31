@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://columnfort.vercel.app/img/freeview__logo.png">
+    <title>COLUMNFORT</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <input type="checkbox" id="mobile-menu" hidden>
+    <div class="mobile-menu">
+        <div class="mobile-menu-top">
+            <a href="index.html"><div class="header__logo logo"><img src="./img/logo.svg" alt=""></div></a>
+            <label for="mobile-menu"><div class="mobile-menu-close-btn"><img src="./img/Close.png" alt=""></div></label>
+        </div>
+        <ul class="mobile-menu-nav">
+            <li class="mobile-search"><input class="search-input" type="text"><div class="search-btn"><img src="./img/Search.svg" alt=""></div></li>
+            <li><a href="./season.html" class="selected">home</a></li>
+            <li><a href="./collection.html?id=all">all</a></li>
+            <li><a href="#">category</a></li>
+        </ul>
+        <ul class="header__nav-end">
+            <li><a class="sign-in" href="./sign_in.html">Sign in</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <header>
+            <a href="index.html"><div class="header__logo logo"><img src="./img/logo.svg" alt=""></div></a>
+            <div class="header__nav">
+                <ul class="header__nav-start">
+                    <li><a href="./season.html">home</a></li>
+                    <li><a href="./collection.html?id=all">all</a></li>
+                    <li><a href="#">category</a></li>
+                    <input type="checkbox" id="search" hidden>
+                    <li class="search"><input class="search-input" type="text" placeholder="Search"><label for="search"><img class="close-toggle" src="./img/Close.svg" alt=""><img class="search-toggle" src="./img/Search.svg" alt=""></label><div class="search-btn"><img src="./img/Search.svg" alt=""></div></li>
+                </ul>
+                <ul class="header__nav-end">
+                    <li><a class="sign-in" href="./sign_in.html">Sign in</a></li>
+                </ul>
+            </div>
+            <label for="mobile-menu" class="mobile-menu-bar-label">
+                <div class="mobile-menu-bar">
+                    <img src="./img/menu_bar.svg" alt="">
+                </div>
+            </label>
+        </header>
+        <main>
+            <div class="item">
+                <div class="item-img"><img src="" alt=""></div>
+                <div class="item-info">
+                    <div class="item-info-top">
+                        <div class="item-main-info">
+                            <div class="item-title"></div>
+                            <div class="item-price"></div>
+                        </div>
+                        <div class="description">description...</div>
+                        <ul class="size">
+                            <label for="xs"><input type="radio" name="size" id="xs" hidden><li>xs</li></label>
+                            <label for="s"><input type="radio" name="size" id="s" hidden><li>s</li></label>
+                            <label for="m"><input type="radio" name="size" id="m" checked hidden><li>m</li></label>
+                            <label for="l"><input type="radio" name="size" id="l" hidden><li>l</li></label>
+                            <label for="xl"><input type="radio" name="size" id="xl" hidden><li>xl</li></label>
+                        </ul>
+                    </div>
+                    <div class="item-info-center">
+                        <ul class="item-imgs">
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                            <li><img src="" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="item-info-bottom">
+                        <div class="add-button">add to bag</div>
+                        <div class="random-button">random!</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+<script src="./js/global.js"></script>
+<script src="./js/detail.js"></script>
+</html>

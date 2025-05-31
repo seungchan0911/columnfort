@@ -1,53 +1,53 @@
 {
     "collection no.1": [
-      { "id": "collection no.1 - 1", "title": "collection no.1 - 1", "price": 115000, "image": "" },
-      { "id": "collection no.1 - 2", "title": "collection no.1 - 2", "price": 270000, "image": "" },
-      { "id": "collection no.1 - 3", "title": "collection no.1 - 3", "price": 90000, "image": "" },
-      { "id": "collection no.1 - 4", "title": "collection no.1 - 4", "price": 135000, "image": "" },
-      { "id": "collection no.1 - 5", "title": "collection no.1 - 5", "price": 75000, "image": "" },
-      { "id": "collection no.1 - 6", "title": "collection no.1 - 6", "price": 185000, "image": "" },
-      { "id": "collection no.1 - 7", "title": "collection no.1 - 7", "price": 300000, "image": "" },
-      { "id": "collection no.1 - 8", "title": "collection no.1 - 8", "price": 220000, "image": "" }
+      { "id": "1-1", "title": "collection no.1 - 1", "price": 115000, "image": "" },
+      { "id": "1-2", "title": "collection no.1 - 2", "price": 270000, "image": "" },
+      { "id": "1-3", "title": "collection no.1 - 3", "price": 90000, "image": "" },
+      { "id": "1-4", "title": "collection no.1 - 4", "price": 135000, "image": "" },
+      { "id": "1-5", "title": "collection no.1 - 5", "price": 75000, "image": "" },
+      { "id": "1-6", "title": "collection no.1 - 6", "price": 185000, "image": "" },
+      { "id": "1-7", "title": "collection no.1 - 7", "price": 300000, "image": "" },
+      { "id": "1-8", "title": "collection no.1 - 8", "price": 220000, "image": "" }
     ],
     "collection no.2": [
-      { "id": "collection no.2 - 1", "title": "collection no.2 - 1", "price": 260000, "image": "" },
-      { "id": "collection no.2 - 2", "title": "collection no.2 - 2", "price": 150000, "image": "" },
-      { "id": "collection no.2 - 3", "title": "collection no.2 - 3", "price": 105000, "image": "" },
-      { "id": "collection no.2 - 4", "title": "collection no.2 - 4", "price": 95000, "image": "" },
-      { "id": "collection no.2 - 5", "title": "collection no.2 - 5", "price": 185000, "image": "" },
-      { "id": "collection no.2 - 6", "title": "collection no.2 - 6", "price": 120000, "image": "" },
-      { "id": "collection no.2 - 7", "title": "collection no.2 - 7", "price": 75000, "image": "" },
-      { "id": "collection no.2 - 8", "title": "collection no.2 - 8", "price": 195000, "image": "" }
+      { "id": "2-1", "title": "collection no.2 - 1", "price": 260000, "image": "" },
+      { "id": "2-2", "title": "collection no.2 - 2", "price": 150000, "image": "" },
+      { "id": "2-3", "title": "collection no.2 - 3", "price": 105000, "image": "" },
+      { "id": "2-4", "title": "collection no.2 - 4", "price": 95000, "image": "" },
+      { "id": "2-5", "title": "collection no.2 - 5", "price": 185000, "image": "" },
+      { "id": "2-6", "title": "collection no.2 - 6", "price": 120000, "image": "" },
+      { "id": "2-7", "title": "collection no.2 - 7", "price": 75000, "image": "" },
+      { "id": "2-8", "title": "collection no.2 - 8", "price": 195000, "image": "" }
     ],
     "collection no.3": [
-      { "id": "collection no.3 - 1", "title": "collection no.3 - 1", "price": 140000, "image": "" },
-      { "id": "collection no.3 - 2", "title": "collection no.3 - 2", "price": 75000, "image": "" },
-      { "id": "collection no.3 - 3", "title": "collection no.3 - 3", "price": 300000, "image": "" },
-      { "id": "collection no.3 - 4", "title": "collection no.3 - 4", "price": 160000, "image": "" },
-      { "id": "collection no.3 - 5", "title": "collection no.3 - 5", "price": 195000, "image": "" },
-      { "id": "collection no.3 - 6", "title": "collection no.3 - 6", "price": 90000, "image": "" },
-      { "id": "collection no.3 - 7", "title": "collection no.3 - 7", "price": 115000, "image": "" },
-      { "id": "collection no.3 - 8", "title": "collection no.3 - 8", "price": 230000, "image": "" }
+      { "id": "3-1", "title": "collection no.3 - 1", "price": 140000, "image": "" },
+      { "id": "3-2", "title": "collection no.3 - 2", "price": 75000, "image": "" },
+      { "id": "3-3", "title": "collection no.3 - 3", "price": 300000, "image": "" },
+      { "id": "3-4", "title": "collection no.3 - 4", "price": 160000, "image": "" },
+      { "id": "3-5", "title": "collection no.3 - 5", "price": 195000, "image": "" },
+      { "id": "3-6", "title": "collection no.3 - 6", "price": 90000, "image": "" },
+      { "id": "3-7", "title": "collection no.3 - 7", "price": 115000, "image": "" },
+      { "id": "3-8", "title": "collection no.3 - 8", "price": 230000, "image": "" }
     ],
     "collection no.4": [
-      { "id": "collection no.4 - 1", "title": "collection no.4 - 1", "price": 210000, "image": "" },
-      { "id": "collection no.4 - 2", "title": "collection no.4 - 2", "price": 75000, "image": "" },
-      { "id": "collection no.4 - 3", "title": "collection no.4 - 3", "price": 260000, "image": "" },
-      { "id": "collection no.4 - 4", "title": "collection no.4 - 4", "price": 180000, "image": "" },
-      { "id": "collection no.4 - 5", "title": "collection no.4 - 5", "price": 125000, "image": "" },
-      { "id": "collection no.4 - 6", "title": "collection no.4 - 6", "price": 195000, "image": "" },
-      { "id": "collection no.4 - 7", "title": "collection no.4 - 7", "price": 300000, "image": "" },
-      { "id": "collection no.4 - 8", "title": "collection no.4 - 8", "price": 90000, "image": "" }
+      { "id": "4-1", "title": "collection no.4 - 1", "price": 210000, "image": "" },
+      { "id": "4-2", "title": "collection no.4 - 2", "price": 75000, "image": "" },
+      { "id": "4-3", "title": "collection no.4 - 3", "price": 260000, "image": "" },
+      { "id": "4-4", "title": "collection no.4 - 4", "price": 180000, "image": "" },
+      { "id": "4-5", "title": "collection no.4 - 5", "price": 125000, "image": "" },
+      { "id": "4-6", "title": "collection no.4 - 6", "price": 195000, "image": "" },
+      { "id": "4-7", "title": "collection no.4 - 7", "price": 300000, "image": "" },
+      { "id": "4-8", "title": "collection no.4 - 8", "price": 90000, "image": "" }
     ],
     "collection no.5": [
-      { "id": "collection no.5 - 1", "title": "collection no.5 - 1", "price": 95000, "image": "" },
-      { "id": "collection no.5 - 2", "title": "collection no.5 - 2", "price": 185000, "image": "" },
-      { "id": "collection no.5 - 3", "title": "collection no.5 - 3", "price": 300000, "image": "" },
-      { "id": "collection no.5 - 4", "title": "collection no.5 - 4", "price": 115000, "image": "" },
-      { "id": "collection no.5 - 5", "title": "collection no.5 - 5", "price": 270000, "image": "" },
-      { "id": "collection no.5 - 6", "title": "collection no.5 - 6", "price": 125000, "image": "" },
-      { "id": "collection no.5 - 7", "title": "collection no.5 - 7", "price": 75000, "image": "" },
-      { "id": "collection no.5 - 8", "title": "collection no.5 - 8", "price": 160000, "image": "" }
+      { "id": "5-1", "title": "collection no.5 - 1", "price": 95000, "image": "" },
+      { "id": "5-2", "title": "collection no.5 - 2", "price": 185000, "image": "" },
+      { "id": "5-3", "title": "collection no.5 - 3", "price": 300000, "image": "" },
+      { "id": "5-4", "title": "collection no.5 - 4", "price": 115000, "image": "" },
+      { "id": "5-5", "title": "collection no.5 - 5", "price": 270000, "image": "" },
+      { "id": "5-6", "title": "collection no.5 - 6", "price": 125000, "image": "" },
+      { "id": "5-7", "title": "collection no.5 - 7", "price": 75000, "image": "" },
+      { "id": "5-8", "title": "collection no.5 - 8", "price": 160000, "image": "" }
     ]
   }
   
