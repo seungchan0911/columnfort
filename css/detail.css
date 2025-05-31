@@ -202,9 +202,9 @@ main {
         position: fixed;
         bottom: 0;
 
-        width: calc(100% - 12.5px);
+        width: calc(100% - 25px);
 
-        padding: 12.5px 0;
+        padding: 12.5px 0 37.5px 0;
         background: #fff;
     }
 }
