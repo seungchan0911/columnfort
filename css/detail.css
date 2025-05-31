@@ -146,14 +146,16 @@ main {
 }
 
 @media (max-width: 750px) {	
+    .container {
+        height: 100dvh;
+    }
+
     header {
         position: static;
     }
 
     main {
         align-items: start;
-
-        height: calc(100dvh - 50px);
     }
 
     .item {
@@ -169,6 +171,7 @@ main {
 
     .item-info {
         height: 100%;
+        gap: 12.5px;
     }
     
     .item-info-center {
