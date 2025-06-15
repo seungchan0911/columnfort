@@ -79,7 +79,7 @@
     justify-content: space-between;
     align-items: center;
     
-    padding: 12.5px;
+    padding: 25px 12.5px;
 }
 
 .mobile-menu-close-btn {
@@ -346,17 +346,13 @@ footer {
 
 @media (max-width: 1200px) {
 	header, main, footer {
-		padding: 25px !important;
+		padding: 25px 12.5px !important;
 	}
 }
 
 @media (max-width: 750px) {	
 	.mobile-menu {
 		height: 100dvh;
-	}
-
-	header {
-		padding: 12.5px;
 	}
 
 	.header__nav {
@@ -373,6 +369,7 @@ footer {
 
 	main {
 		padding: 12.5px !important;
+		margin-top: 75px !important;
 	}
 }
 

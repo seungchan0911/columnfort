@@ -63,12 +63,6 @@ main {
 }
 
 @media (max-width: 750px) {
-    main {
-        gap: 25px;
-
-        margin-top: 50px;
-    }
-    
     .items-frame {
         grid-template-columns: 1fr 1fr;
 

@@ -160,10 +160,9 @@ main {
     main {
         align-items: start;
 
-        margin-top: 50px;
-        margin-bottom: 60px;
-
         height: fit-content;
+
+        margin-top: 75px;
     }
     
     .item {
@@ -173,12 +172,6 @@ main {
     
     .item-imgs li {
         width: 150px;
-    }
-    
-    .item-info {
-        gap: 12.5px;
-        
-        height: 100% !important;
     }
     
     .item-info-center {
@@ -194,20 +187,6 @@ main {
     }
 
     .item-info-top > .size {
-        display: none;
-    }
-
-    .item-info-bottom {
-        position: fixed;
-        bottom: 0;
-
-        width: calc(100% - 25px);
-
-        background: #fff;
-        padding-bottom: 12.5px;
-    }
-
-    .random-button {
         display: none;
     }
 }
