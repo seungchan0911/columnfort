@@ -345,8 +345,12 @@ footer {
 }
 
 @media (max-width: 1200px) {
-	header, main, footer {
+	header, footer {
 		padding: 25px 12.5px !important;
+	}
+
+	main {
+		padding: 12.5px;
 	}
 }
 
