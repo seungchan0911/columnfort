@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="https://columnfort.vercel.app/img/freeview__logo.png">
     <title>COLUMNFORT</title>
-   <link rel="stylesheet" href="{{ asset('css/global.css') }}">
-   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/global.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <x-layout.mobile-header />
