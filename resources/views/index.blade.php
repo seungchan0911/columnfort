@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    `@vite(['resources/css/app.css', 'resources/js/app.js'])`
+    `@vite(['resources/js/app.js'])`
 </head>
 <body>
     <x-layout.mobile-header />
