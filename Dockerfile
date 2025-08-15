@@ -13,15 +13,14 @@ RUN sed -ri 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' \
     /etc/apache2/apache2.conf \
     /etc/apache2/conf-available/*.conf
 
-# Composer
+# Composer 바이너리
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 
-# (캐시 최적화) 우선 composer 파일만 복사
+# 빌드 단계: artisan 스크립트 실행 금지 (ENV 미주입 대비)
+# ❗ composer.lock이 없다면 아래 줄을 'COPY composer.json ./' 로 바꿔도 됨
 COPY composer.json composer.lock ./
-
-# scripts는 빌드 단계에서 실행하지 않음(ENV 미주입 대비)
 RUN composer install --no-dev --prefer-dist --no-interaction --no-progress --no-scripts
 
 # 앱 코드 복사
@@ -31,7 +30,7 @@ COPY . .
 RUN chown -R www-data:www-data storage bootstrap/cache \
     && chmod -R 775 storage bootstrap/cache
 
-# 런타임에 artisan 스크립트 실행(이때 ENV가 주입됨)
+# 런타임에서 artisan 실행 (이때 ENV가 주입됨)
 CMD php artisan package:discover --ansi \
  && php artisan config:cache \
  && php artisan route:cache \
